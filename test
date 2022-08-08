@@ -1,0 +1,19 @@
+1. py -m venv venv (for windows) and python or python3 -m venv venv (mac or linux)
+2. .\venv\Scripts\activate (for windwos) and source ./venv/bin/activate (max or linux)
+3. py -m pip install --upgrade pip (for windows) python3 -m pip install --upgrade pip (max or linux)
+4. pip install django
+5. django-admin startproject core
+6. cd core/
+7. python manage.py startapp main
+8. add main to core.settings INSTALLE_APPS
+9. create new file (urls.py) in main 
+10. core.main add include and create new path for open link in main.urls
+11. confirm main.urls path in to core.urls (from django.core import path
+                                            urlpatterns = [
+                                            ])
+12. import http response in views.py (from django.http import HttpResponse)
+13. create new function in to main.views (example` def home(request):
+                                                      return HttpResponse('Hello Team'))
+14. create new path in to main.urls for new instance django page
+15. open terminal and write python manage.py runserver
+16. ctrl + left clic in to link, and open this link
